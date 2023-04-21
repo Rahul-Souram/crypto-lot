@@ -1,0 +1,258 @@
+.modal .ReactModal__Content,
+.ReactModal__Content--after-open {
+  background: linear-gradient(
+    180deg,
+    rgba(98, 106, 136, 0.1) 0%,
+    rgba(46, 49, 73, 0.1) 100%
+  ) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 17px;
+  width: 600px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.modal .ReactModal__Overlay,
+.ReactModal__Overlay--after-open {
+  background: url("../src/images/bg.jpeg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crypto-card-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto auto auto;
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+.crypto-inner {
+  padding: 0.5rem 1rem;
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.crypto-inner p {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
+}
+
+.crypto-outer :hover {
+  background: linear-gradient(175.25deg, rgba(158, 68, 255, 0.25) 3.56%, rgba(84, 62, 255, 0.25) 103.97%),
+linear-gradient(175.25deg, #9E44FF 3.56%, #543EFF 103.97%);
+
+}
+.crypto-outer :active {
+  background: linear-gradient(175.25deg, rgba(158, 68, 255, 0.25) 3.56%, rgba(84, 62, 255, 0.25) 103.97%),
+linear-gradient(175.25deg, #9E44FF 3.56%, #543EFF 103.97%);
+
+}
+.tabs-header {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.tab-selected {
+  color: #fff;
+  text-align: center;
+}
+.tab {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+  border-radius: 7px;
+  margin-right: 1rem;
+  color: #56565a;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tab.active {
+  background: linear-gradient(
+      175.25deg,
+      rgba(158, 68, 255, 0.25) 3.56%,
+      rgba(84, 62, 255, 0.25) 103.97%
+    ),
+    linear-gradient(175.25deg, #9e44ff 3.56%, #543eff 103.97%);
+  color: #fff;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Tomorrow', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.back-btn {
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  padding: 0.8rem 2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 48%;
+}
+
+.next-btn {
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(175.25deg, #9e44ff 3.56%, #543eff 103.97%),
+    linear-gradient(
+      180deg,
+      rgba(237, 239, 250, 0.5) 0%,
+      rgba(46, 49, 73, 0) 100%
+    );
+  padding: 0.8rem 2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 48%;
+}
+.input-container {
+  margin: 0.5rem 0;
+}
+
+.input-fields label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  text-align: left;
+}
+.input-fields input {
+  padding: 1rem 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  background: #14172b;
+  border-radius: 17px;
+  width: 85%;
+  border: none;
+  outline: none;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Tomorrow', sans-serif;
+}
+
+.final-market {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.market-icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+.crypto-inner-market {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 110px;
+  border-radius: 10px;
+  background: linear-gradient(0deg, #14172b, #14172b),
+    linear-gradient(
+      180deg,
+      rgba(236, 240, 255, 0.1) 0%,
+      rgba(59, 63, 87, 0) 100%
+    );
+}
+
+.crypto-inner-market p {
+  color: rgba(255, 255, 255, 0.7);
+}
+.heading-market {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+.page-num-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+  position: relative;
+}
+.page-num {
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  background: #14172b;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  z-index: 1;
+}
+.page-num:nth-child(2):before,
+.page-num:nth-child(2):after {
+  content: "";
+  position: absolute;
+  left: 7%;
+  background: rgba(255, 255, 255, 0.05);
+  height: 10px;
+  width: 86%;
+  top: 35%;
+  z-index: -1;
+}
+
+.page-num.pass {
+  background: #6f9246;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.page-num.active {
+  background: linear-gradient(175.25deg, #9e44ff 3.56%, #543eff 103.97%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.search-input {
+  padding: 1rem 3rem;
+  color: rgba(255, 255, 255, 0.9);
+  background: #14172b;
+  border-radius: 17px;
+  width: 85%;
+  border: none;
+  outline: none;
+  margin: 0.5rem 0;
+  font-size: 15px;
+  font-family: 'Tomorrow', sans-serif;
+}
+.search-container{
+  position: relative;
+  margin: 1rem auto;
+}
+.search-icon {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 35%;
+  left: 3%;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.58335 17.5C13.9556 17.5 17.5 13.9556 17.5 9.58332C17.5 5.21107 13.9556 1.66666 9.58335 1.66666C5.2111 1.66666 1.66669 5.21107 1.66669 9.58332C1.66669 13.9556 5.2111 17.5 9.58335 17.5Z' stroke='%2356565A' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18.3334 18.3333L16.6667 16.6667' stroke='%2356565A' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}

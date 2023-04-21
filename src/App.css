@@ -1,5 +1,6 @@
 body {
   background: #14172b;
+  font-family: "Tomorrow", sans-serif;
 }
 
 .card-body {
@@ -36,7 +37,6 @@ body {
 .mostplayed {
   background: #14172b;
   border-radius: 10px;
-  text-transform: capitalize;
   color: rgba(255, 255, 255, 0.9);
   padding: 0.5rem;
   font-weight: 600;
@@ -50,7 +50,7 @@ body {
 }
 
 .title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.2rem;
   color: #fff;
 }
@@ -58,15 +58,40 @@ body {
 .card-btn {
   border: none;
   border-radius: 50px;
-  background: linear-gradient(175.25deg, #9E44FF 3.56%, #543EFF 103.97%),
-linear-gradient(180deg, rgba(237, 239, 250, 0.5) 0%, rgba(46, 49, 73, 0) 100%);
-padding: 0.8rem 2rem;
-color :#fff;
-font-size: 1.2rem;
-font-weight: 600;
-width: 100%;
+  background: linear-gradient(175.25deg, #9e44ff 3.56%, #543eff 103.97%),
+    linear-gradient(
+      180deg,
+      rgba(237, 239, 250, 0.5) 0%,
+      rgba(46, 49, 73, 0) 100%
+    );
+  padding: 0.8rem 2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-family: "Tomorrow", sans-serif;
 }
 
 .tagline {
   color: rgba(255, 255, 255, 0.7);
+}
+
+
+::-webkit-scrollbar {
+ width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(175.25deg, #9E44FF 3.56%, #543EFF 103.97%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }

@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import "./react-modal.css";
 import QuestionMark from "../src/svg/heart-circle.svg";
 import Reverse from "../src/svg/reverse.svg";
 import MemberIcon from "../src/svg/member-icon.svg";
+import { ModalComponent } from "./components/ModalComponent";
 
 function App() {
+  const [isModalOpen, setisModalOpen] = useState(false);
+
+  const handleModalOpen = () => {
+    setisModalOpen(true);
+    console.log("modal");
+  };
+  const closeModal = () => {
+    setisModalOpen(false);
+  };
   return (
     <div className="card-body">
       <div className="card-container">
@@ -32,10 +43,17 @@ function App() {
             the lot to start is both sides should have equal funds
           </p>
         </div>
-        <button type="button" className="card-btn">
+        <button
+          type="button"
+          className="card-btn"
+          onClick={() => {
+            handleModalOpen();
+          }}
+        >
           Create Lot
         </button>
       </div>
+      <ModalComponent isModal={isModalOpen} closeModal={closeModal} />
     </div>
   );
 }
