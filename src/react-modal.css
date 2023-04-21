@@ -137,8 +137,9 @@
 
 .input-fields label {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
+  font-weight: 600;
 }
 .input-fields input {
   padding: 0.8rem 2rem;
