@@ -38,7 +38,12 @@ body {
   background: #14172b;
   border-radius: 10px;
   color: rgba(255, 255, 255, 0.9);
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
+
+.mostplayed-modal {
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 600;
 }
 
@@ -53,6 +58,7 @@ body {
   font-weight: 500;
   font-size: 1.2rem;
   color: #fff;
+  margin: 0;
 }
 
 .card-btn {
@@ -79,7 +85,7 @@ body {
 
 
 ::-webkit-scrollbar {
- width: 10px;
+ width: 7px;
 }
 
 ::-webkit-scrollbar-track {

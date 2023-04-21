@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactModal from "react-modal";
 import { TabSection } from "../components/TabSection";
-import QuestionMark from "../svg/heart-circle.svg";
+import CloseModal from "../svg/close-btn.svg";
 import FinalMarket from "./FinalMarket";
 import data from "../crypto.json";
 
@@ -155,9 +155,9 @@ const ModalComponent = ({ closeModal, isModal }: any) => {
       portalClassName="modal"
     >
       <div className="card-header">
-        <div className="mostplayed">multi-user- lot</div>
-        <div>
-          <img src={QuestionMark} alt="question-mark" />
+        <div className="mostplayed-modal">Multi-user lot</div>
+        <div onClick={() => closeModal()}>
+          <img src={CloseModal} alt="close-modal" />
         </div>
       </div>
       <div className="page-num-container">

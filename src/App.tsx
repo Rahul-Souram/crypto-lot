@@ -11,7 +11,6 @@ function App() {
 
   const handleModalOpen = () => {
     setisModalOpen(true);
-    console.log("modal");
   };
   const closeModal = () => {
     setisModalOpen(false);
@@ -20,7 +19,7 @@ function App() {
     <div className="card-body">
       <div className="card-container">
         <div className="card-header">
-          <div className="mostplayed">most Played</div>
+          <div className="mostplayed">Most Played</div>
           <div>
             <img src={QuestionMark} alt="question-mark" />
           </div>

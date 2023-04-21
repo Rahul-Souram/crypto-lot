@@ -6,6 +6,7 @@ import Cardano from "../svg/E3.svg";
 import Chainlink from "../svg/E4.svg";
 import Algorand from "../svg/E5.svg";
 import IconMarket from "../svg/icon-market.svg";
+import Calender from "../svg/calendar.svg";
 import "react-datepicker/dist/react-datepicker.css";
 
 const FinalMarket = ({ opposeAsset, yourAsset, goback }: any) => {
@@ -14,6 +15,10 @@ const FinalMarket = ({ opposeAsset, yourAsset, goback }: any) => {
   const [value, setValue] = useState("");
   const [validation, setValidation] = useState(false);
   const [lot, setLot] = useState(false);
+
+  const LotCreated = `Fund : ${value},
+   start: ${startDate}, 
+   end: ${endDate}`;
 
   let imageYours;
 
@@ -67,7 +72,6 @@ const FinalMarket = ({ opposeAsset, yourAsset, goback }: any) => {
       }, 2000);
     } else {
       setLot(true);
-      console.log(value, startDate, endDate);
     }
   };
   return (
@@ -99,26 +103,38 @@ const FinalMarket = ({ opposeAsset, yourAsset, goback }: any) => {
               onChange={(e) => setValue(e.target.value)}
             />
           </div>
-          <div className="input-container">
+          <div className="input-container date">
             <label htmlFor="start-date">Lot Starts On</label>
             <DatePicker
               selected={startDate}
               onChange={(date: any) => setStartDate(date)}
             />
+            <span className="calender">
+              <img src={Calender} alt="calender" />
+            </span>
           </div>
-          <div className="input-container">
+          <div className="input-container date">
             <label htmlFor="fund">Lot Ends On</label>
             <DatePicker
               selected={endDate}
               onChange={(date: any) => setEndDate(date)}
-            />
+            >
+              dating
+            </DatePicker>
+            <span className="calender">
+              <img src={Calender} alt="calender" />
+            </span>
           </div>
         </div>
       </div>
       {validation && (
         <div className="heading-market">please fill all fields</div>
       )}
-      {lot && <div className="heading-market">Lot created !</div>}
+      {lot && (
+        <div className="heading-market">
+          Lot created !<div>{LotCreated}</div>
+        </div>
+      )}
       <div className="btn-container">
         <button type="button" className="back-btn" onClick={() => goback()}>
           Back
