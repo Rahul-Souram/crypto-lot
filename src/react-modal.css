@@ -9,8 +9,9 @@
   border: 1px solid rgba(255, 255, 255, 0.05) !important;
   border-radius: 18px !important;
   width: 600px;
-  height: 90%;
+  height:90%;
   margin: 0 auto;
+  overflow: hidden !important;
 }
 
 .modal .ReactModal__Overlay,
@@ -21,16 +22,20 @@
   align-items: center;
 }
 
+.tabs-content{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 400px;
+}
 .crypto-card-container {
   display: grid;
   gap: 20px;
   grid-template-columns: auto auto auto auto auto;
-  margin: 1.5rem 0;
   justify-content: center;
 }
 
 .crypto-inner {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.1rem;
   width: 4rem;
   height: 4rem;
   margin: 1rem auto;
@@ -39,6 +44,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  gap: 5px;
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -46,27 +52,45 @@
   font-weight: 600;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 0;
+  font-size: 14px;
 }
 
 .crypto-outer :hover {
   background: linear-gradient(
-      175.25deg,
-      rgba(158, 68, 255, 0.25) 3.56%,
-      rgba(84, 62, 255, 0.25) 103.97%
-    ),
-    linear-gradient(175.25deg, #9e44ff 3.56%, #543eff 103.97%);
+    175.25deg,
+    rgba(158, 68, 255, 0.25) 3.56%,
+    rgba(84, 62, 255, 0.25) 103.97%
+  );
+  border-radius: 8px;
+  border: 1px solid #9e44ff;
+}
+.crypto-inner img:hover{
+  background: transparent;
+  border: none;
+}
+.crypto-inner p:hover{
+  border: none;
+}
+.crypto-inner.active {
+  background: linear-gradient(
+    175.25deg,
+    rgba(158, 68, 255, 0.25) 3.56%,
+    rgba(84, 62, 255, 0.25) 103.97%
+  );
+  border-radius: 8px;
+  border: 1px solid #9e44ff;
 }
 .crypto-outer :active {
   background: linear-gradient(
-      175.25deg,
-      rgba(158, 68, 255, 0.25) 3.56%,
-      rgba(84, 62, 255, 0.25) 103.97%
-    ),
-    linear-gradient(175.25deg, #9e44ff 3.56%, #543eff 103.97%);
+    175.25deg,
+    rgba(158, 68, 255, 0.25) 3.56%,
+    rgba(84, 62, 255, 0.25) 103.97%
+  );
+  border-radius: 8px;
+  border: 1px solid #9e44ff;
 }
 .tabs-header {
   display: flex;
-  justify-content: center;
   margin: 1rem;
 }
 
@@ -85,6 +109,8 @@
   text-transform: capitalize;
   font-weight: 600;
   text-align: center;
+  font-size: 16px;
+  font-family: 'Bai Jamjuree', sans-serif;
 }
 
 .tab.active {
@@ -102,7 +128,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Tomorrow", sans-serif;
   margin-bottom: 2rem;
 }
 
@@ -110,25 +135,27 @@
   background: transparent;
   border-radius: 50px;
   border: 1px solid #fff;
-  padding: 0.8rem 2rem;
-  color: #fff;
-  font-size: 1.2rem;
+  padding: 0.7rem 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
   font-weight: 600;
+  font-family: 'Bai Jamjuree', sans-serif;
   width: 48%;
 }
 
 .next-btn {
   border: none;
   border-radius: 50px;
+  font-family: 'Bai Jamjuree', sans-serif;
   background: linear-gradient(175.25deg, #9e44ff 3.56%, #543eff 103.97%),
     linear-gradient(
       180deg,
       rgba(237, 239, 250, 0.5) 0%,
       rgba(46, 49, 73, 0) 100%
     );
-  padding: 0.8rem 2rem;
+  padding: 0.7rem 1rem;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: 600;
   width: 48%;
 }
@@ -143,15 +170,15 @@
   font-weight: 600;
 }
 .input-fields input {
-  padding: 0.8rem 2rem;
+  padding: 0.7rem 1rem;
   color: rgba(255, 255, 255, 0.9);
   background: #14172b;
   border-radius: 17px;
-  width: 85%;
+  width: 95%;
   border: none;
   outline: none;
   margin: 0.5rem 0;
-  font-size: 1.1rem;
+  font-size: 15px;
   font-weight: 600;
   font-family: "Tomorrow", sans-serif;
 }
@@ -159,7 +186,7 @@
 .final-market {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 90%;
   width: 100%;
   justify-content: space-between;
 }
@@ -191,14 +218,15 @@
 .crypto-inner-market p {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 600;
+  font-size: 14px;
 }
 .crypto-inner-market img {
- width: 2.8rem;
- height: 2.8rem;
+  width: 2.8rem;
+  height: 2.8rem;
 }
 .heading-market {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 600;
   color: #fff;
   margin: 1rem 0;
@@ -209,16 +237,21 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 1.5rem 0 1rem;
+  margin: 1rem 0 1rem;
   position: relative;
 }
 .page-num {
-  padding: 0.35rem 0.8rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background: #14172b;
   color: #fff;
   text-align: center;
   font-weight: 600;
+  font-size: 16px;
   z-index: 1;
 }
 .page-num:nth-child(2):before,
@@ -278,5 +311,5 @@
 .calender {
   position: absolute;
   top: 45%;
-  right: 7%;
+  right: 2%;
 }

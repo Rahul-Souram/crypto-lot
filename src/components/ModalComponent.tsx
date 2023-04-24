@@ -36,8 +36,8 @@ const ModalComponent = ({ closeModal, isModal }: any) => {
   ];
   const [page, setPage] = useState(0);
 
-  const [yourAsset, setYourAsset] = useState("");
-  const [opposeAsset, setOpposeAsset] = useState("");
+  const [yourAsset, setYourAsset] = useState({ id: "", item: ""});
+  const [opposeAsset, setOpposeAsset] = useState({ id: "", item: ""});
   const [valid, setValid] = useState(false);
 
   const goback = () => {
@@ -46,8 +46,8 @@ const ModalComponent = ({ closeModal, isModal }: any) => {
 
   const goforward = () => {
     if (
-      (page === 0 && yourAsset === "") ||
-      (page === 1 && opposeAsset === "")
+      (page === 0 && yourAsset.item === "") ||
+      (page === 1 && opposeAsset.item === "")
     ) {
       setValid(true);
       setTimeout(() => {
@@ -76,7 +76,7 @@ const ModalComponent = ({ closeModal, isModal }: any) => {
             />
             <button
               type="button"
-              className="card-btn"
+              className="card-btn-next"
               onClick={() => goforward()}
             >
               Next
@@ -137,7 +137,7 @@ const ModalComponent = ({ closeModal, isModal }: any) => {
             />
             <button
               type="button"
-              className="card-btn"
+              className="card-btn-next"
               onClick={() => goforward()}
             >
               Next
@@ -155,7 +155,7 @@ const ModalComponent = ({ closeModal, isModal }: any) => {
       portalClassName="modal"
     >
       <div className="card-header">
-        <div className="mostplayed-modal">Multi-user lot</div>
+        <div className="mostplayed-modal">Multi-user Lot</div>
         <div onClick={() => closeModal()}>
           <img src={CloseModal} alt="close-modal" />
         </div>
@@ -176,8 +176,6 @@ const ModalComponent = ({ closeModal, isModal }: any) => {
             <div className={`${styleName}`}>{num}</div>
           )
         })}
-
-       
       </div>
       <ConditionalCOmponent />
     </ReactModal>

@@ -21,9 +21,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  justify-content: center;
+  padding: 0 1.5rem;
   gap: 24px;
-
   width: 598px;
   height: 380px;
 }
@@ -45,14 +45,13 @@ body {
 .mostplayed-modal {
   color: rgba(255, 255, 255, 0.9);
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 16px;
 }
 
 .card-icons-section {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 1rem;
 }
 
 .title {
@@ -71,22 +70,36 @@ body {
       rgba(237, 239, 250, 0.5) 0%,
       rgba(46, 49, 73, 0) 100%
     );
-  padding: 0.8rem 2rem;
+  padding: 0.7rem 2rem;
   color: #fff;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  font-family: "Tomorrow", sans-serif;
+}
+.card-btn-next{
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(175.25deg, #9e44ff 3.56%, #543eff 103.97%),
+    linear-gradient(
+      180deg,
+      rgba(237, 239, 250, 0.5) 0%,
+      rgba(46, 49, 73, 0) 100%
+    );
+  padding: 0.7rem 2rem;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
   width: 100%;
   margin-bottom: 2rem;
   font-family: "Tomorrow", sans-serif;
 }
-
 .tagline {
   color: rgba(255, 255, 255, 0.7);
 }
 
-
 ::-webkit-scrollbar {
- width: 7px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -95,7 +108,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(175.25deg, #9E44FF 3.56%, #543EFF 103.97%);
+  background: linear-gradient(175.25deg, #9e44ff 3.56%, #543eff 103.97%);
   border-radius: 5px;
 }
 

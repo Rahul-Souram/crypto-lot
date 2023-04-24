@@ -1,312 +1,412 @@
 {
   "crypto": [
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "01"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "02"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "03"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "04"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "05"
     },
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "06"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "07"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "08"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "09"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "10"
     },
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "11"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "12"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "13"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "14"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "15"
     },
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "16"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "17"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "18"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "19"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "191"
     },
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "20"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "21"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "22"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "23"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "24"
     },
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "25"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "26"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "27"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "28"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "29"
     }
   ],
   "indexes": [
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "30"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "31"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "32"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "33"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "34"
     },
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "35"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "36"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "37"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "38"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "39"
     },
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "40"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "41"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "42"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "43"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "44"
     }
   ],
-  "stocks":[
+  "stocks": [
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "45"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "46"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "47"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "48"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "49"
     },
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "50"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "51"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "52"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "53"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "54"
     },
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "55"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "56"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "57"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "58"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "59"
     },
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "60"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "61"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "62"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "63"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "64"
     },
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "65"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "66"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "67"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "68"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "69"
     }
   ],
-  "commodities":[
+  "commodities": [
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "70"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "71"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "72"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "73"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "74"
     },
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "75"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "76"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "77"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "78"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "79"
     }
   ],
-  "forex":[
+  "forex": [
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "80"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "81"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "82"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "83"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "84"
     },
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "85"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "86"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "87"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "88"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "89"
     },
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "90"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "91"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "92"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "93"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "94"
     },
     {
-      "item": "Ethereum"
+      "item": "Ethereum",
+      "id": "95"
     },
     {
-      "item": "Avalanche"
+      "item": "Avalanche",
+      "id": "96"
     },
     {
-      "item": "Cardano"
+      "item": "Cardano",
+      "id": "97"
     },
     {
-      "item": "Chainlink"
+      "item": "Chainlink",
+      "id": "98"
     },
     {
-      "item": "Algorand"
+      "item": "Algorand",
+      "id": "99"
     }
   ]
 }

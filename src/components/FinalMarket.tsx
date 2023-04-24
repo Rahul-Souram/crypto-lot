@@ -9,20 +9,22 @@ import IconMarket from "../svg/icon-market.svg";
 import Calender from "../svg/calendar.svg";
 import "react-datepicker/dist/react-datepicker.css";
 
-const FinalMarket = ({ opposeAsset, yourAsset, goback }: any) => {
+const FinalMarket = ({ opposeAsset, yourAsset, goback, data }: any) => {
   const [startDate, setStartDate] = useState(new Date()) as any;
   const [endDate, setEndDate] = useState(new Date()) as any;
   const [value, setValue] = useState("");
   const [validation, setValidation] = useState(false);
   const [lot, setLot] = useState(false);
 
+  console.log(yourAsset, opposeAsset);
+  
   const LotCreated = `Fund : ${value},
    start: ${startDate}, 
    end: ${endDate}`;
 
   let imageYours;
 
-  switch (yourAsset) {
+  switch (yourAsset.item) {
     case "Ethereum":
       imageYours = Ethereum;
       break;
@@ -45,7 +47,7 @@ const FinalMarket = ({ opposeAsset, yourAsset, goback }: any) => {
   //oppose
   let imageOpposite;
 
-  switch (opposeAsset) {
+  switch (opposeAsset.item) {
     case "Ethereum":
       imageOpposite = Ethereum;
       break;
@@ -81,21 +83,21 @@ const FinalMarket = ({ opposeAsset, yourAsset, goback }: any) => {
         <div className="market-icons-container">
           <div className="crypto-inner-market">
             <p>Your Asset</p>
-            <img src={imageYours} alt={yourAsset} />
-            <p>{yourAsset}</p>
+            <img src={imageYours} alt={yourAsset.item} />
+            <p>{yourAsset.item}</p>
           </div>
           <div>
             <img src={IconMarket} alt={IconMarket} />
           </div>
           <div className="crypto-inner-market">
             <p>Opposing Asset</p>
-            <img src={imageOpposite} alt={opposeAsset} />
-            <p>{opposeAsset}</p>
+            <img src={imageOpposite} alt={opposeAsset.item} />
+            <p>{opposeAsset.item}</p>
           </div>
         </div>
         <div className="input-fields">
           <div className="input-container">
-            <label htmlFor="fund">Fund your Pool</label>
+            <label htmlFor="fund">Fund your Pool ({yourAsset.item})</label>
             <input
               type="text"
               id="fund"
@@ -108,6 +110,7 @@ const FinalMarket = ({ opposeAsset, yourAsset, goback }: any) => {
             <DatePicker
               selected={startDate}
               onChange={(date: any) => setStartDate(date)}
+              dateFormat="dd MMM yyyy"
             />
             <span className="calender">
               <img src={Calender} alt="calender" />
@@ -118,6 +121,7 @@ const FinalMarket = ({ opposeAsset, yourAsset, goback }: any) => {
             <DatePicker
               selected={endDate}
               onChange={(date: any) => setEndDate(date)}
+              dateFormat="dd MMM yyyy"
             >
               dating
             </DatePicker>
