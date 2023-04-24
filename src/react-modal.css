@@ -7,8 +7,8 @@
   ) !important;
 
   border: 1px solid rgba(255, 255, 255, 0.05) !important;
-  border-radius: 18px !important;
-  width: 600px;
+  border-radius: 16px !important;
+  width: 550px;
   height:90%;
   margin: 0 auto;
   overflow: hidden !important;
@@ -25,34 +25,39 @@
 .tabs-content{
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 400px;
+  height: 330px;
 }
 .crypto-card-container {
   display: grid;
   gap: 20px;
   grid-template-columns: auto auto auto auto auto;
-  justify-content: center;
+}
+.crypto-outer {
+margin: 1rem 0;
 }
 
 .crypto-inner {
-  padding: 0.5rem 1.1rem;
-  width: 4rem;
-  height: 4rem;
-  margin: 1rem auto;
+  padding: 0.5rem 1.1rem 0.8rem;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  gap: 5px;
   border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.crypto-inner img {
+  margin: 0.5rem 0 0;
 }
 
 .crypto-inner p {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .crypto-outer :hover {
@@ -69,6 +74,7 @@
   border: none;
 }
 .crypto-inner p:hover{
+  background: transparent;
   border: none;
 }
 .crypto-inner.active {
@@ -91,7 +97,8 @@
 }
 .tabs-header {
   display: flex;
-  margin: 1rem;
+  margin: 0.5rem;
+  justify-content: space-around;
 }
 
 .tab-selected {
@@ -101,15 +108,15 @@
 .tab {
   display: inline-block;
   width: fit-content;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.8rem;
   transition: all 0.3s;
   border-radius: 14px;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   color: #56565a;
   text-transform: capitalize;
   font-weight: 600;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Bai Jamjuree', sans-serif;
 }
 
@@ -128,16 +135,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .back-btn {
   background: transparent;
   border-radius: 50px;
   border: 1px solid #fff;
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 0.5rem;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   font-family: 'Bai Jamjuree', sans-serif;
   width: 48%;
@@ -153,9 +160,9 @@
       rgba(237, 239, 250, 0.5) 0%,
       rgba(46, 49, 73, 0) 100%
     );
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 0.5rem;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   width: 48%;
 }
@@ -165,20 +172,20 @@
 
 .input-fields label {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
+  font-size: 12px;
   text-align: left;
   font-weight: 600;
 }
 .input-fields input {
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 0.8rem;
   color: rgba(255, 255, 255, 0.9);
   background: #14172b;
   border-radius: 17px;
-  width: 95%;
+  width: 93%;
   border: none;
   outline: none;
   margin: 0.5rem 0;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   font-family: "Tomorrow", sans-serif;
 }
@@ -196,16 +203,16 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 .crypto-inner-market {
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 140px;
-  height: 110px;
+  width: 120px;
+  height: 100px;
   border-radius: 10px;
   background: linear-gradient(0deg, #14172b, #14172b),
     linear-gradient(
@@ -218,7 +225,7 @@
 .crypto-inner-market p {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
 }
 .crypto-inner-market img {
   width: 2.8rem;
@@ -226,10 +233,10 @@
 }
 .heading-market {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #fff;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 .page-num-container {
@@ -237,7 +244,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 1rem 0 1rem;
+  margin: 0.5rem 0 0.5rem;
   position: relative;
 }
 .page-num {
@@ -251,7 +258,7 @@
   color: #fff;
   text-align: center;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12px;
   z-index: 1;
 }
 .page-num:nth-child(2):before,
@@ -285,13 +292,14 @@
   border: none;
   outline: none;
   margin: 0.5rem 0;
-  font-size: 15px;
+  font-size: 13px;
   font-family: "Tomorrow", sans-serif;
   border: 1px solid #9e44ff;
 }
 .search-container {
   position: relative;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
+  width: 90%;
 }
 .search-icon {
   content: "";
@@ -311,5 +319,5 @@
 .calender {
   position: absolute;
   top: 45%;
-  right: 2%;
+  right: 4%;
 }

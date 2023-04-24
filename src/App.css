@@ -40,12 +40,13 @@ body {
   color: rgba(255, 255, 255, 0.9);
   padding: 0.5rem 1rem;
   font-weight: 600;
+  font-size: 15px;
 }
 
 .mostplayed-modal {
   color: rgba(255, 255, 255, 0.9);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .card-icons-section {
@@ -56,7 +57,7 @@ body {
 
 .title {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 16px;
   color: #fff;
   margin: 0;
 }
@@ -72,7 +73,7 @@ body {
     );
   padding: 0.7rem 2rem;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   width: 100%;
   font-family: "Tomorrow", sans-serif;
@@ -88,7 +89,7 @@ body {
     );
   padding: 0.7rem 2rem;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   width: 100%;
   margin-bottom: 2rem;
@@ -96,6 +97,7 @@ body {
 }
 .tagline {
   color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
 }
 
 ::-webkit-scrollbar {
